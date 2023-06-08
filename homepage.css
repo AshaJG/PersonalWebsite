@@ -1,0 +1,212 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana,Geneva, Tahome, sans-serif;
+    text-transform: capitalize;
+    outline:none; border:none;
+    text-decoration: none;
+    font-weight: normal;
+    /*transition: all .2s linear;*/
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background:linear-gradient(deeppink,purple);
+    padding:5.5rem;
+}
+
+header{
+    height: 28rem;
+    width:35rem;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding:1rem;
+    border-radius: 1rem;
+}
+
+header .user{
+    padding-top:2rem;
+}
+
+header .user img{
+    margin:1rem 0;
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1rem rgba(255,255,255,.2);
+}
+
+header .user .name{
+    font-size: 3rem;
+    color: white;
+    padding: .5rem 0;
+}
+
+header .user .post{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: lighter;
+}
+
+header .navbar{
+    padding:1rem 3rem;
+}
+
+header .navbar ul li{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background: rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 1rem;
+}
+
+header .navbar ul li a:hover{
+    background: rgba(255,255,255,.5);
+    color: #555;
+    transition: none;
+}
+
+.container{
+    height: 65rem;
+    width:90rem;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding:1rem;
+    border-radius: 1rem;
+    /*height:59rem;*/
+    /*width:80rem;*/
+    /*background:rgba(255,255,255,.2);*/
+    /*box-shadow: 0 1rem 2rem rgba(0,0,0,.3);*/
+    /*backdrop-filter: blur(.4rem);*/
+    /*border-radius: 1rem;*/
+    /*overflow: hidden;*/
+
+}
+
+.home{
+    min-height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #eee;
+}
+
+.home .name .span{
+    /*font-size:*/
+}
+
+.home .post{
+    padding:1rem 0;
+}
+
+.home .post span{
+    font-size:2rem;
+    color: #fff;
+}
+
+img {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+/*This CSS code applies an animation to any img elements on the page using the mover animation.
+The animation is set to last for 2 seconds, repeat infinitely, and alternate the animation direction.
+The @keyframes and @-webkit-keyframes rules define the animation's behavior, starting at 0% of the animation's progress with no vertical translation,
+and ending at 100% with a vertical translation of -20 pixels.*/
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+/*moving the  text*/
+
+.home .post .typing-text {
+    overflow: hidden; /*ensures content not revealed until animation *!*/
+    border-right: .15em solid orange; /*typewriter cursor*/
+    white-space: nowrap; /*keeps content in a single line*/
+    margin: 0 auto; /*scrolling effects of the typewriter */
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40,end),
+        blink-caret .75s step-end infinite;
+}
+
+/*@keyframes typing {*/
+/* from { width:0}*/
+/*    to{width:100%}*/
+/*}*/
+
+/*@keyframes blink-caret{*/
+/*    from,to {border-color:transparent}*/
+/*    50%{border-color:darkblue;}*/
+
+/*}*/
+/*.home .share{*/
+/*    position:absolute;*/
+/*    left:50%;*/
+/*    transform:translateX(-50%);*/
+/*    display:flex;*/
+/*    padding:1rem;*/
+/*    border-radius: 1rem;*/
+/*    background: rgba(255,255,255,.1);*/
+/*    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);*/
+
+/*}*/
+
+.theme-switch{
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 1rem;
+    backdrop-filter: blur(.4rem);
+}
+.theme-switch span{
+    display: block;
+    height:3rem;
+    width:3rem;
+    border-radius:50%;
+    cursor: pointer;
+    margin:2rem 2.5rem;
+    box-shadow: 0 0 0 .5rem rgba(255,255,255,.2),
+                0 1rem 2rem rgba(0,0,0,.2);
+
+}
